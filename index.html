@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bingo de Palavras - Séries de TV</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Bingo de Palavras</h1>
+      <p class="subtitle">Encontre a palavra mais frequente no roteiro da sua série favorita!</p>
+
+      <div class="input-container">
+        <label for="script-input">Cole o roteiro do episódio:</label>
+        <textarea
+          id="script-input"
+          placeholder="Ex: No condado de Hawkins, doze crianças desapareceram no último verão..."
+        ></textarea>
+      </div>
+
+      <div class="buttons">
+        <button id="convert-btn" style="--clr: #ff4500">
+          <span>CONVERTER</span>
+          <i></i>
+        </button>
+        <button id="return-btn" style="--clr: #ff4500">
+          <span>RETORNAR</span>
+          <i></i>
+        </button>
+      </div>
+
+      <div class="result-section">
+        <h2>Resultado</h2>
+        <div id="result"></div>
+        <div id="calculation"></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
